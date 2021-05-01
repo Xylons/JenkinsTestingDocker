@@ -8,12 +8,12 @@ pipeline {
     }
     stage("build") {
       steps {
-        sh "echo 1234 | sudo -S docker build -t hello_there . "
+        sh "echo 1234 | sudo -S docker build -t calculator . "
       }
     }
     stage("run") {
       steps {
-        sh "echo 1234 | sudo -S docker run --rm hello_there"
+        sh "echo 1234 | sudo -S docker run --rm calculator"
       }
     }
   }
