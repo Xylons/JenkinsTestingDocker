@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage("Executing Tests") {
       steps {
-        sh "pytest tests.py"
+        sh "echo 1234 | sudo -S pytest tests.py"
       }
     }
     stage("build") {
